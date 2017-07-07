@@ -1,0 +1,27 @@
+.sound {
+  background-color: yellow;
+  color: black;
+  border: 5px solid black;
+  min-width: 10vh;
+  min-height: 10vh;
+  max-width: 10vh;
+  max-height: 10vh;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.background-img {
+  position: absolute;
+  z-index: -1;
+  background-image: url("images/soundwaves.png");
+  min-width: 100vh;
+  min-height: 100vh;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 1080;
+  height: 1920;
+}
