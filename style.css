@@ -1,46 +1,60 @@
-.sound {
-  display: table;
-  background-color: yellow;
-  color: black;
-  border: 5px solid black;
+.sound-button {
+  background-color: #414345;
+  color: white;
+  border: 4px solid #FFAB00;
+  border-radius: 4px;
   min-width: 10vh;
   min-height: 10vh;
   max-width: 10vh;
   max-height: 10vh;
   flex-grow: 1;
   flex-shrink: 1;
-  transition: all ease 8s;
+  transition: all ease 0.3s;
   box-shadow: inset 0 0 0 0 #31302B;
+  display:flex;
+}
+
+.progress-bar {
+  display: block;
+  height: 100%;
+  width: 50%;
+  background-color: #FFAB00;
+  box-shadow: inset -20px 0px 40px -10px black;
 }
 
 .sound-name {
-  display: table-cell;
+  display: block;
   text-align: center;
-  vertical-align: middle;
+  position: absolute;
+}
+
+.paused {
+  box-shadow: inset 0px 0px 5px 5px black;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .background-img {
   position: absolute;
   z-index: -1;
-  background-image: url("images/soundwaves.png");
+  background-image: url("images/background.jpg");
   min-width: 100vh;
   min-height: 100vh;
+  height: 1199px;
+  width: 1919;
 }
 
 .button-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content:flex-start;
   width: 1080;
   height: 1920;
 }
 
-/*.sound:hover {
-  background-color: red;
-  transition: background-color 2000ms radial;
-}*/
 
-.sound:hover {
-  box-shadow: inset 100px 0 0 0 #e0e0e0;
-  color: #fff;
+.sound-button:hover {
+  transform: scale(1.1);
 }
